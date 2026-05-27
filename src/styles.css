@@ -465,7 +465,7 @@ h1 span {
 
 .audit-row {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr) 50px;
+  grid-template-columns: 112px minmax(0, 1fr) 74px;
   gap: 10px;
   align-items: center;
   margin-top: 12px;
@@ -498,6 +498,13 @@ h1 span {
   font-style: normal;
   color: var(--paper);
   font-weight: 900;
+}
+
+.audit-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .image-marquee {
@@ -757,6 +764,7 @@ h1 span {
 }
 
 .lead-panel input,
+.lead-panel select,
 .lead-panel textarea {
   width: 100%;
   border: 1px solid var(--line);
@@ -764,6 +772,10 @@ h1 span {
   background: rgba(255, 255, 255, 0.06);
   color: var(--paper);
   padding: 13px 14px;
+}
+
+.lead-panel select {
+  appearance: none;
 }
 
 .lead-panel input[type="file"] {
@@ -774,6 +786,13 @@ h1 span {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.lead-disclaimer {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .button {

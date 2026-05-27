@@ -6,10 +6,10 @@ export function Process() {
     <section className="page-section process-section reveal-band" id="process">
       <div className="section-heading section-heading-wide">
         <p className="section-kicker">Разбор сметы</p>
-        <h2>Не просим “скидку”. Вскрываем, где салон положил деньги в цену.</h2>
+        <h2>Не просим скидку. Показываем, где в смете лежат лишние деньги.</h2>
         <p>
-          Покупатель обычно видит красивую сумму и пару обещаний. Мы раскладываем расчет на детали: что реально нужно кухне,
-          а что добавлено, чтобы чек выглядел солиднее.
+          Покупатель обычно видит красивую кухню и итоговую сумму. Мы разбираем смету на части: фасады, модули, фурнитуру,
+          доставку, монтаж и декоративные позиции. Так видно, что можно заменить без потери внешнего вида и удобства.
         </p>
       </div>
       <div className="audit-layout">
@@ -17,7 +17,7 @@ export function Process() {
           <div className="receipt-top">
             <span>
               <ReceiptText aria-hidden="true" />
-              салонная смета
+              Из чего обычно складывается переплата
             </span>
             <strong>100%</strong>
           </div>
@@ -31,8 +31,8 @@ export function Process() {
             </div>
           ))}
           <div className="receipt-result">
-            <span>После пересборки</span>
-            <strong>≈70%</strong>
+            <span>Снижение сметы в проектах часто находится в диапазоне</span>
+            <strong>5-30%</strong>
           </div>
         </div>
 

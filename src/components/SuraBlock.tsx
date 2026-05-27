@@ -5,11 +5,11 @@ export function SuraBlock() {
   return (
     <section className="page-section sura-section" id="sura">
       <div className="sura-copy">
-        <p className="section-kicker">SURA</p>
-        <h2>Прозрачность продает сильнее, чем сказка про “свою фабрику”.</h2>
+        <p className="section-kicker">Прозрачность</p>
+        <h2>Прозрачность сильнее обещаний про «свою фабрику»</h2>
         <p>
-          Мы открыто работаем на базе SURA: показываем реальные фасады, модульный ряд и изображения производителя. Сила не в
-          легенде, а в том, что покупатель понимает, за что платит.
+          Мы не просим поверить на слово. На каждом кейсе показываем исходную смету, что изменили, сколько удалось снизить и
+          что осталось в проекте: фасады, модули, монтаж, доставка и сроки.
         </p>
       </div>
 
@@ -22,18 +22,18 @@ export function SuraBlock() {
         <div className="sura-points">
           <div>
             <Factory aria-hidden="true" />
-            <span>Производитель</span>
-            <strong>SURA без маскировки</strong>
+            <span>Понятная база производства</span>
+            <strong>Видно, из каких материалов и модулей собирается кухня</strong>
           </div>
           <div>
             <ScanSearch aria-hidden="true" />
             <span>Наша работа</span>
-            <strong>расчет, проект, замер, сборка сметы</strong>
+            <strong>Проверяем смету, пересчитываем комплектацию и готовим понятный расчет</strong>
           </div>
           <div>
             <BadgeCheck aria-hidden="true" />
-            <span>Покупатель видит</span>
-            <strong>где мебель, где работы, где доплаты</strong>
+            <span>Покажем вашу экономию</span>
+            <strong>Отделяем реальные обязательные позиции от того, за что можно не переплачивать</strong>
           </div>
         </div>
       </div>

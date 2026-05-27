@@ -12,6 +12,7 @@ export function CasePage({ caseStudy, onLead }: CasePageProps) {
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
   const activeImage = activeImageIndex === null ? null : caseStudy.gallery[activeImageIndex];
   const hasMultipleImages = caseStudy.gallery.length > 1;
+  const pageTitle = caseStudy.caseTitle;
 
   function showPreviousImage() {
     setActiveImageIndex((currentIndex) => {
@@ -54,26 +55,26 @@ export function CasePage({ caseStudy, onLead }: CasePageProps) {
           Все кейсы
         </a>
         <button type="button" onClick={() => onLead("audit")}>
-          Проверить свою смету
+          Проверить смету
         </button>
       </nav>
 
       <section className="case-hero">
         <div className="case-hero-copy">
           <p className="section-kicker">{caseStudy.location}</p>
-          <h1>{caseStudy.title}</h1>
+          <h1>{pageTitle}</h1>
           <p>{caseStudy.clientStory}</p>
           <div className="case-numbers" aria-label="Итоги пересчета">
             <div>
-              <span>Было</span>
+              <span>Смета салона</span>
               <strong>{caseStudy.oldPrice}</strong>
             </div>
             <div>
-              <span>Стало</span>
+              <span>После пересчета</span>
               <strong>{caseStudy.newPrice}</strong>
             </div>
             <div>
-              <span>Экономия</span>
+              <span>Снижение</span>
               <strong>{caseStudy.saving}</strong>
             </div>
           </div>
@@ -89,11 +90,11 @@ export function CasePage({ caseStudy, onLead }: CasePageProps) {
             <button
               className="case-gallery-button"
               type="button"
-              aria-label={`Открыть фото ${index + 1}: ${caseStudy.title}`}
+              aria-label={`Открыть фото ${index + 1}: ${pageTitle}`}
               onClick={() => setActiveImageIndex(index)}
               key={image}
             >
-              <img src={image} alt={`${caseStudy.title}. Фото ${index + 1}`} />
+              <img src={image} alt={`${pageTitle}. Фото ${index + 1}`} />
             </button>
           ))}
         </div>
@@ -143,10 +144,10 @@ export function CasePage({ caseStudy, onLead }: CasePageProps) {
         <h2>Хотите такой же разбор своей сметы?</h2>
         <div className="footer-actions">
           <button className="button button-primary" type="button" onClick={() => onLead("audit")}>
-            Скинуть смету
+            Проверить смету
           </button>
           <button className="button button-ghost" type="button" onClick={() => onLead("new")}>
-            Посчитать по размерам
+            Рассчитать по размерам
           </button>
         </div>
       </section>
@@ -163,7 +164,7 @@ export function CasePage({ caseStudy, onLead }: CasePageProps) {
                 <ChevronLeft aria-hidden="true" />
               </button>
             ) : null}
-            <img src={activeImage} alt={`${caseStudy.title}. Фото ${activeImageIndex + 1} крупно`} />
+            <img src={activeImage} alt={`${pageTitle}. Фото ${activeImageIndex + 1} крупно`} />
             {hasMultipleImages ? (
               <button className="case-lightbox-nav case-lightbox-next" type="button" aria-label="Следующее фото" onClick={showNextImage}>
                 <ChevronRight aria-hidden="true" />

@@ -7,16 +7,17 @@ export function FooterLead({ onAudit, onNew }: FooterLeadProps) {
   return (
     <section className="footer-lead">
       <p className="section-kicker">Следующий шаг</p>
-      <h2>До предоплаты у вас еще есть рычаг. После - только сожаление.</h2>
+      <h2>Проверьте смету до предоплаты</h2>
       <p>
-        Пришлите смету сегодня. Если там нечего резать, так и скажем. Если салон раздул чек - покажем, где именно.
+        Пришлите расчет из салона или размеры кухни. Покажем, где можно сэкономить без потери внешнего вида, хранения и
+        нормального монтажа.
       </p>
       <div className="footer-actions">
         <button className="button button-primary" type="button" onClick={onAudit}>
-          Проверить мою смету
+          Проверить смету
         </button>
         <button className="button button-ghost" type="button" onClick={onNew}>
-          Смета по размерам
+          Рассчитать по размерам
         </button>
       </div>
     </section>

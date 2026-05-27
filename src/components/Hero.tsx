@@ -15,8 +15,8 @@ export function Hero({ onLead }: HeroProps) {
         </a>
         <div className="nav-links">
           <a href="#process">Проверить смету</a>
-          <a href="#catalog">Каталог</a>
-          <a href="#sura">SURA</a>
+          <a href="#catalog">Кейсы</a>
+          <a href="#sura">Как считаем</a>
           <a href="#lead">Москва и МО</a>
         </div>
         <button className="nav-button" type="button" onClick={() => onLead("audit")}>
@@ -28,13 +28,14 @@ export function Hero({ onLead }: HeroProps) {
         <div className="hero-copy">
           <p className="pill">
             <Sparkles aria-hidden="true" />
-            Антисалонный расчет на базе SURA
+            Аналитический разбор сметы без переплаты
           </p>
           <h1>
-            <span>Смета легче на 30%.</span> Вид - как из салона.
+            <span>Кухня под ваш размер</span> без сетевой переплаты
           </h1>
           <p className="hero-lead">
-            Пришлите салонную смету или размеры. Покажем, где уходят деньги, и соберем кухню SURA для Москвы и МО.
+            Пришлите салонную смету, размеры или фото кухни. Мы проверим комплектацию, уберем лишние позиции и покажем,
+            где можно сэкономить без потери внешнего вида, хранения и нормального монтажа.
           </p>
 
           <div className="proof-grid">
@@ -55,16 +56,16 @@ export function Hero({ onLead }: HeroProps) {
             >
               <FileSearch aria-hidden="true" />
               <span>
-                <strong>Скинуть смету</strong>
-                <small>PDF, фото или скрин. Найдем переплату по строкам.</small>
+                <strong>Проверить смету</strong>
+                <small>PDF, фото или скрин. Сравним состав заказа по строкам.</small>
               </span>
               <ArrowRight aria-hidden="true" />
             </button>
             <button className="lead-choice" type="button" aria-label="Рассчитать кухню по размерам" onClick={() => onLead("new")}>
               <Ruler aria-hidden="true" />
               <span>
-                <strong>Смета по размерам</strong>
-                <small>Размер, стиль, бюджет. Остальное соберем сами.</small>
+                <strong>Рассчитать по размерам</strong>
+                <small>Размер, стиль, бюджет. Покажем ориентир до замера.</small>
               </span>
               <ArrowRight aria-hidden="true" />
             </button>
@@ -83,23 +84,24 @@ export function Hero({ onLead }: HeroProps) {
 
           <div className="audit-card">
             <div className="audit-head">
-              <span>разбор сметы</span>
-              <strong>-30%</strong>
+              <span>Потенциал снижения сметы</span>
+              <strong>до 30%</strong>
             </div>
             <div className="audit-row">
-              <span>Салонная</span>
+              <span>Салонная смета</span>
               <i>
                 <b />
               </i>
               <em>100%</em>
             </div>
             <div className="audit-row">
-              <span>Наша</span>
+              <span>После пересчета</span>
               <i>
                 <b className="accent" />
               </i>
-              <em>≈70%</em>
+              <em>до 70-95%</em>
             </div>
+            <p className="audit-note">Итог зависит от размеров, материалов, фурнитуры и состава работ.</p>
           </div>
 
           <div className="image-marquee" aria-hidden="true">

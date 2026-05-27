@@ -6,11 +6,11 @@ export function CatalogIntent() {
   return (
     <section className="page-section catalog-section" id="catalog">
       <div className="section-heading section-heading-wide">
-        <p className="section-kicker">Визуальные кейсы</p>
-        <h2>Не россыпь похожих картинок. Один сценарий - одна серия фотографий.</h2>
+        <p className="section-kicker">Реальные разборы смет</p>
+        <h2>Не набор похожих картинок. А понятные сценарии экономии.</h2>
         <p>
-          Пока это не подтвержденные объекты с адресами и отзывами, а аккуратно собранные сценарии на базе материалов SURA.
-          Дословные благодарности добавим только после согласования с реальными клиентами.
+          Каждый кейс - отдельная задача: салонная смета, площадь, что изменили, сколько удалось снизить и почему кухня не
+          стала выглядеть дешевле.
         </p>
       </div>
       <div className="intent-grid">
@@ -23,7 +23,7 @@ export function CatalogIntent() {
             <img src={caseStudy.image.src} alt={caseStudy.image.alt} />
             <div>
               <span>
-                {caseStudy.kicker} / экономия {caseStudy.saving}
+                {caseStudy.kicker} / снижение {caseStudy.saving}
               </span>
               <h3>{caseStudy.title}</h3>
               <p>{caseStudy.text}</p>
