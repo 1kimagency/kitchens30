@@ -17,7 +17,7 @@ export function CatalogIntent() {
         {caseStudies.map((caseStudy) => (
           <a
             className={caseStudy.accent ? "intent-card intent-card-accent" : "intent-card"}
-            href={withBasePath(`/cases/${caseStudy.slug}`)}
+            href={withBasePath(`/cases/${caseStudy.slug}/`)}
             key={caseStudy.slug}
           >
             <img src={caseStudy.image.src} alt={caseStudy.image.alt} />
