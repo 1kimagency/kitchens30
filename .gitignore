@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+.superpowers
+.gstack/
+docs/superpowers/
+.playwright-cli/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+Кухонные коллекции/
+public/assets/cases/maori/04.jpg
+public/assets/cases/maori/05.jpg
