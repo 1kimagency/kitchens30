@@ -27,7 +27,13 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: cp dist/index.html dist/404.html
+      - name: Create static case routes
+        run: |
+          for slug in manolo-graphite ciel-light nice-small trinity-handleless mozart-family maori-dark; do
+            mkdir -p "dist/cases/$slug"
+            cp dist/index.html "dist/cases/$slug/index.html"
+          done
+          cp dist/index.html dist/404.html
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
