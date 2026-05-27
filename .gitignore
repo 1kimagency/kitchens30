@@ -5,6 +5,7 @@ dist
 .gstack/
 docs/superpowers/
 .playwright-cli/
+output/
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
